@@ -24,11 +24,13 @@ namespace JA.GUIWPF
     public partial class MainWindow : Window
     {
         private netzwerkKomponenteList l = new netzwerkKomponenteList();
+        private netzwerkKomponenteList l2 = new netzwerkKomponenteList();
         private string ext = " ";
         public MainWindow()
         {
             InitializeComponent();
             listViewHandy.ItemsSource = this.l;
+            listView1.ItemsSource = this.l2;
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
@@ -103,8 +105,6 @@ namespace JA.GUIWPF
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
-
             if (comboBox1.SelectedIndex.Equals(0))
             {
                 comboBox2.Items.Clear();
@@ -142,6 +142,75 @@ namespace JA.GUIWPF
                 comboBox2.Items.Add("Raum 403");
                 comboBox2.Items.Add("Raum 404");
             }
+        }
+        private void comboBox3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboBox3.SelectedIndex.Equals(0))
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Items.Add("Raum 101");
+                comboBox4.Items.Add("Raum 102");
+                comboBox4.Items.Add("Raum 103");
+                comboBox4.Items.Add("Raum 104");
+                comboBox4.Items.Add("Raum 105");
+            }
+            else if (comboBox3.SelectedIndex.Equals(1))
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Items.Add("Raum 201");
+                comboBox4.Items.Add("Raum 202");
+                comboBox4.Items.Add("Raum 203");
+                comboBox4.Items.Add("Raum 204");
+            }
+            else if (comboBox3.SelectedIndex.Equals(2))
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Items.Add("Raum 301");
+                comboBox4.Items.Add("Raum 302");
+                comboBox4.Items.Add("Raum 303");
+                comboBox4.Items.Add("Raum 304");
+                comboBox4.Items.Add("Raum 305");
+                comboBox4.Items.Add("Raum 306");
+                comboBox4.Items.Add("Raum 307");
+                comboBox4.Items.Add("Raum 308");
+            }
+            else if (comboBox3.SelectedIndex.Equals(3))
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Items.Add("Raum 401");
+                comboBox4.Items.Add("Raum 402");
+                comboBox4.Items.Add("Raum 403");
+                comboBox4.Items.Add("Raum 404");
+            }
+        }
+
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int foundCount = 0;
+            this.l2.Clear();
+            foreach (netzwerkKomponente prime in l)
+            {
+                textBlockOutput.Text = comboBox3.SelectedItem.ToString().Remove(0, 38);
+                
+
+                if (prime.Raum == comboBox4.SelectedItem.ToString() && prime.Gebaude == comboBox3.SelectedItem.ToString().Remove(0, 38))
+                {
+                    this.l2.Add(prime);
+                    foundCount++;
+                }
+            }
+            if (foundCount > 0)
+            {
+                listView1.Items.Refresh();
+                sucheText.Text = foundCount + " Ergebniss/e gefunden.";
+            }
+            else
+            {
+                this.l2.Clear();
+                listView1.Items.Refresh();
+                sucheText.Text = "Keine Ergebnisse gefunden.";
+            }
+            
         }
 
     }

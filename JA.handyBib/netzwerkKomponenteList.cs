@@ -21,6 +21,11 @@ namespace JA.netzwerkPlanBib
             this.AddRange(ergebniss);
         }
 
+       /* public void search(netzwerkKomponenteList h, string raum, string gebaude)
+        {
+
+        }*/
+
 
 
 
