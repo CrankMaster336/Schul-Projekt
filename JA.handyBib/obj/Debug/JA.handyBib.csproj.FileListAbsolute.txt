@@ -1,0 +1,4 @@
+h:\eigene dokumente\visual studio 2010\Projects\ProjektTestHandy\JA.handyBib\bin\Debug\JA.handyBib.dll
+h:\eigene dokumente\visual studio 2010\Projects\ProjektTestHandy\JA.handyBib\bin\Debug\JA.handyBib.pdb
+h:\eigene dokumente\visual studio 2010\Projects\ProjektTestHandy\JA.handyBib\obj\Debug\JA.handyBib.dll
+h:\eigene dokumente\visual studio 2010\Projects\ProjektTestHandy\JA.handyBib\obj\Debug\JA.handyBib.pdb
