@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows;
 
 namespace JA.netzwerkPlanBib
 {
@@ -9,13 +10,27 @@ namespace JA.netzwerkPlanBib
     {
         public void ser(serialisierungsserver s, string pname, netzwerkKomponenteList h)
         {
-            s.seriealize(h, pname);
+            try
+            {
+                s.seriealize(h, pname);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         public void deser(serialisierungsserver s, string pname)
         {
-            netzwerkKomponenteList ergebniss = s.deseriealize(pname);
-            this.Clear();
-            this.AddRange(ergebniss);
+            try
+            {
+                netzwerkKomponenteList ergebniss = s.deseriealize(pname);
+                this.Clear();
+                this.AddRange(ergebniss);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

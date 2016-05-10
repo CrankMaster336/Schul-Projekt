@@ -26,3 +26,17 @@ H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.GUIWPF\obj\x86\D
 H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.g.resources
 H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.Properties.Resources.resources
 H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.csproj.GenerateResource.Cache
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.exe
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\bin\Debug\JA.GUIWPF.exe
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\bin\Debug\JA.GUIWPF.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\bin\Debug\JA.netzwerkPlanBib.dll
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\bin\Debug\JA.netzwerkPlanBib.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.csprojResolveAssemblyReference.cache
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\MainWindow.baml
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\MainWindow.g.cs
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\App.g.cs
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF_MarkupCompile.cache
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.g.resources
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.Properties.Resources.resources
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.GUIWPF\obj\x86\Debug\JA.GUIWPF.csproj.GenerateResource.Cache

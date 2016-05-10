@@ -10,3 +10,8 @@ H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.netzwerkPlanBib\
 H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.netzwerkPlanBib\bin\Debug\JA.netzwerkPlanBib.pdb
 H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.netzwerkPlanBib\obj\Debug\JA.netzwerkPlanBib.dll
 H:\Eigene Dokumente\Visual Studio 2010\Projects\Schulprojekt\JA.netzwerkPlanBib\obj\Debug\JA.netzwerkPlanBib.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.netzwerkPlanBib\bin\Debug\JA.netzwerkPlanBib.dll
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.netzwerkPlanBib\bin\Debug\JA.netzwerkPlanBib.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.netzwerkPlanBib\obj\Debug\JA.netzwerkPlanBib.csprojResolveAssemblyReference.cache
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.netzwerkPlanBib\obj\Debug\JA.netzwerkPlanBib.dll
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.netzwerkPlanBib\obj\Debug\JA.netzwerkPlanBib.pdb

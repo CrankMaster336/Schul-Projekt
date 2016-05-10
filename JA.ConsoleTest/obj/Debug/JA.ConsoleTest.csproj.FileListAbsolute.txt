@@ -1,0 +1,8 @@
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\bin\Debug\JA.ConsoleTest.exe.config
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\bin\Debug\JA.ConsoleTest.exe
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\bin\Debug\JA.ConsoleTest.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\bin\Debug\JA.netzwerkPlanBib.dll
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\bin\Debug\JA.netzwerkPlanBib.pdb
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\obj\Debug\JA.ConsoleTest.csprojResolveAssemblyReference.cache
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\obj\Debug\JA.ConsoleTest.exe
+C:\Users\g.busch.SOFTTAILOR\Downloads\Schul-Projekt-master (2)\Schul-Projekt-master\JA.ConsoleTest\obj\Debug\JA.ConsoleTest.pdb
