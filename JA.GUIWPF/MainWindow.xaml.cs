@@ -33,7 +33,7 @@ namespace JA.GUIWPF
             InitializeComponent();
             listViewKomponente.ItemsSource = this.l;
             listView1.ItemsSource = this.l2;
-            
+
         }
         public string OutputInfo
         {
@@ -56,15 +56,16 @@ namespace JA.GUIWPF
             else
             {
                 textBlockOutput.Text = "Inkorrekte eingaben";
-            }  
+            }
         }
 
         private void buttonSave_Click(object sender, RoutedEventArgs e)
-        {            
+        {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "XML Datei (*.xml)|*.xml|JSON Datei (*.json)|*.json";
-            if(saveFileDialog.ShowDialog() == true){
-                string pname = saveFileDialog.FileName;                
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string pname = saveFileDialog.FileName;
                 FileInfo fi = new FileInfo(pname);
                 ext = fi.Extension;
                 if (ext == ".json")
@@ -76,7 +77,7 @@ namespace JA.GUIWPF
                 {
                     serialisierungsserver s1 = new xml();
                     l.ser(s1, pname, l);
-                }                
+                }
             }
         }
 
@@ -84,7 +85,7 @@ namespace JA.GUIWPF
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "XML Datei (*.xml)|*.xml|JSON Datei (*.json)|*.json";
-            
+
             if (openFileDialog.ShowDialog() == true)
             {
                 string pname = openFileDialog.FileName;
@@ -92,22 +93,37 @@ namespace JA.GUIWPF
                 ext = fi.Extension;
                 if (ext == ".json")
                 {
-                    serialisierungsserver s2 = new json();
-                    l.deser(s2, pname);
+                    try
+                    {
+                        serialisierungsserver s2 = new json();
+                        l.deser(s2, pname);
 
-                    listViewKomponente.ItemsSource = this.l;
-                    listViewKomponente.Items.Refresh();
+                        listViewKomponente.ItemsSource = this.l;
+                        listViewKomponente.Items.Refresh();
+                    }
+                    catch (Exception exc)
+                    {
+                        MessageBox.Show(exc.Message);
+                    }
+
                 }
                 if (ext == ".xml")
-                {
-                    serialisierungsserver s2 = new xml();
-                    l.deser(s2, pname);
+                {       
+                    try
+                    {
+                        serialisierungsserver s2 = new xml();
+                        l.deser(s2, pname);
 
-                    listViewKomponente.ItemsSource = this.l;
-                    listViewKomponente.Items.Refresh();
-                }                
+                        listViewKomponente.ItemsSource = this.l;
+                        listViewKomponente.Items.Refresh();
+                    }
+                    catch (Exception exc)
+                    {
+                        MessageBox.Show(exc.Message);
+                    }
+                }
                 textBlockOutput.Text = "Geladen.";
-            }            
+            }
         }
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -201,7 +217,7 @@ namespace JA.GUIWPF
             {
                 sucheText.Text = "Bitte korrekte Suchkriterien wählen.";
             }
-            
+
         }
 
         private void listeKomponentenInRaum()
