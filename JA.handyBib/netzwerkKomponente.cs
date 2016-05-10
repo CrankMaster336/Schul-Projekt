@@ -12,7 +12,7 @@ namespace JA.netzwerkPlanBib
         public string Komponente { get; set; }
         public string Gebaude { get; set; }
         public string Raum { get; set; }
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
 
         public override string ToString()
         {

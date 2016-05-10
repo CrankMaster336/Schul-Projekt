@@ -26,7 +26,6 @@ namespace JA.GUIWPF
     {
         private netzwerkKomponenteList l = new netzwerkKomponenteList();
         private netzwerkKomponenteList l2 = new netzwerkKomponenteList();
-        private CultureInfo ci = new CultureInfo("de-DE");
         private string ext = " ";
         public MainWindow()
         {
@@ -44,8 +43,7 @@ namespace JA.GUIWPF
                 newItem.Komponente = textBoxKomponente.Text;
                 newItem.Gebaude = comboBox1.Text;
                 newItem.Raum = comboBox2.Text;
-                DateTime utcdt = Convert.ToDateTime(datePicker1.Text);
-                newItem.Date = utcdt.ToString("d", ci);
+                newItem.Date = Convert.ToDateTime(datePicker1.Text);
                 this.l.Add(newItem);
                 textBlockOutput.Text = "Erfolgreich eingetragen";
                 listViewKomponente.Items.Refresh();

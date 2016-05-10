@@ -33,10 +33,10 @@
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Guid" Width="40" DisplayMemberBinding="{Binding Path=guid}" />
-                                <GridViewColumn Header="Komponente" Width="60" DisplayMemberBinding="{Binding Path=Komponente}" />
-                                <GridViewColumn Header="Gebaude" Width="85" DisplayMemberBinding="{Binding Path=Gebaude}" />
-                                <GridViewColumn Header="Raum" Width="40" DisplayMemberBinding="{Binding Path=Raum}" />
-                                <GridViewColumn Header="Date" Width="50" DisplayMemberBinding="{Binding Path=Date}" />
+                                <GridViewColumn Header="Komponente" Width="90" DisplayMemberBinding="{Binding Path=Komponente}" />
+                                <GridViewColumn Header="Gebaude" Width="80" DisplayMemberBinding="{Binding Path=Gebaude}" />
+                                <GridViewColumn Header="Raum" Width="80" DisplayMemberBinding="{Binding Path=Raum}" />
+                                <GridViewColumn Header="Date" Width="80" DisplayMemberBinding="{Binding Path=Date, StringFormat='dd.MM.yyyy'}" />
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -74,7 +74,7 @@
                                 <GridViewColumn Header="Komponente" Width="110" DisplayMemberBinding="{Binding Path=Komponente}"/>
                                 <GridViewColumn Header="Gebaude" Width="110" DisplayMemberBinding="{Binding Path=Gebaude}"/>
                                 <GridViewColumn Header="Raum" Width="110" DisplayMemberBinding="{Binding Path=Raum}"/>
-                                <GridViewColumn Header="Date" Width="110" DisplayMemberBinding="{Binding Path=Date}"/>
+                                <GridViewColumn Header="Date" Width="110" DisplayMemberBinding="{Binding Path=Date, StringFormat='dd.MM.yyyy'}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
