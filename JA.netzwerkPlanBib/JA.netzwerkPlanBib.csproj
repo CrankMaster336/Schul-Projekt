@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="binary.cs" />
     <Compile Include="json.cs" />
     <Compile Include="netzwerkKomponenteList.cs" />
     <Compile Include="netzwerkKomponente.cs" />

@@ -6,8 +6,6 @@ using System.Text;
 namespace JA.netzwerkPlanBib
 {
     public class netzwerkKomponente : Unique{
-        
-        
         public int Id { get; set; }
         public string Komponente { get; set; }
         public string Gebaude { get; set; }

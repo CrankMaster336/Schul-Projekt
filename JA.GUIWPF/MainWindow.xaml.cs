@@ -22,6 +22,7 @@ namespace JA.GUIWPF
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
         private netzwerkKomponenteList l = new netzwerkKomponenteList();
@@ -34,7 +35,11 @@ namespace JA.GUIWPF
             listView1.ItemsSource = this.l2;
             
         }
-
+        public string OutputInfo
+        {
+            get { return textBlockOutput.Text; }
+            set { textBlockOutput.Text = value; }
+        }
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
             if (textBoxKomponente.Text != "" && datePicker1.Text != "" && comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)

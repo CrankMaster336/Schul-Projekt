@@ -94,13 +94,13 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\iphone26.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\JA.handyBib\JA.netzwerkPlanBib.csproj">
+    <ProjectReference Include="..\JA.netzwerkPlanBib\JA.netzwerkPlanBib.csproj">
       <Project>{37174BA8-3468-4921-9501-6635DC769794}</Project>
       <Name>JA.netzwerkPlanBib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\warehouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

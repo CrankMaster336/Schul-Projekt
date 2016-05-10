@@ -1,4 +1,0 @@
-H:\Eigene Dokumente\Visual Studio 2010\Projects\ProjektTestHandy\JA.handyBib\bin\Debug\JA.netzwerkPlanBib.dll
-H:\Eigene Dokumente\Visual Studio 2010\Projects\ProjektTestHandy\JA.handyBib\bin\Debug\JA.netzwerkPlanBib.pdb
-H:\Eigene Dokumente\Visual Studio 2010\Projects\ProjektTestHandy\JA.handyBib\obj\Debug\JA.netzwerkPlanBib.dll
-H:\Eigene Dokumente\Visual Studio 2010\Projects\ProjektTestHandy\JA.handyBib\obj\Debug\JA.netzwerkPlanBib.pdb

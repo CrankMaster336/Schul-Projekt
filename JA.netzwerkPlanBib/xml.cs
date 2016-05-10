@@ -13,14 +13,9 @@ namespace JA.netzwerkPlanBib
         {
             FileStream stream = new FileStream(@pname, FileMode.Create, FileAccess.ReadWrite);
             XmlSerializer formatter = new XmlSerializer(typeof(netzwerkKomponenteList));
-            if (stream.Length != 0)
-            {
-                //textBlockOutput.Text = "Datei existiert und wurde \nüberschreiben";
-            }
-            else
+            if (stream.Length == 0)
             {
                 formatter.Serialize(stream, h);
-                //textBlockOutput.Text = "Datei Gespeichert.";
             }
             stream.Close();
         }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.netzwerkPlanBib", "JA.handyBib\JA.netzwerkPlanBib.csproj", "{37174BA8-3468-4921-9501-6635DC769794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.netzwerkPlanBib", "JA.netzwerkPlanBib\JA.netzwerkPlanBib.csproj", "{37174BA8-3468-4921-9501-6635DC769794}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.GUIWPF", "JA.GUIWPF\JA.GUIWPF.csproj", "{44B8CF82-D773-48A2-9F3F-71ED85005491}"
 EndProject
