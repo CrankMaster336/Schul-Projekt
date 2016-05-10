@@ -28,8 +28,8 @@
                             <DatePicker Height="25" HorizontalAlignment="Left" Margin="78,99,0,0" Name="datePicker1" VerticalAlignment="Top" Width="134" Grid.ColumnSpan="2" Grid.Column="1" />
                         </Grid>
                     </GroupBox>
-                    <Button Content="Hinzufügen" Height="24" HorizontalAlignment="Left" Margin="12,166,0,0" Name="buttonAdd" VerticalAlignment="Top" Width="256" Background="#FF00D800" Click="buttonAdd_Click" BorderBrush="Red" />
-                    <ListView Height="218" HorizontalAlignment="Left" Margin="274,15,0,0" Name="listViewHandy" VerticalAlignment="Top" Width="218">
+                    <Button Content="Hinzufügen" Height="24" HorizontalAlignment="Left" Margin="12,166,0,0" Name="buttonAdd" VerticalAlignment="Top" Width="256" Click="buttonAdd_Click" />
+                    <ListView Height="218" HorizontalAlignment="Left" Margin="274,15,0,0" Name="listViewKomponente" VerticalAlignment="Top" Width="218">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Guid" Width="40" DisplayMemberBinding="{Binding Path=guid}" />
@@ -43,8 +43,8 @@
                     <GroupBox Header="Meldungen" Height="67" HorizontalAlignment="Left" Margin="9,196,0,0" Name="groupBox2" VerticalAlignment="Top" Width="259">
                         <TextBlock Height="44" Name="textBlockOutput" Text="" Width="242" />
                     </GroupBox>
-                    <Button Background="#FF00D800" Content="Speichern" Height="24" HorizontalAlignment="Left" Margin="391,239,0,0" Name="buttonSave" VerticalAlignment="Top" Width="101" Click="buttonSave_Click" />
-                    <Button Background="#FF00D800" Content="Laden" Height="24" Margin="276,239,113,0" Name="buttonLaden" VerticalAlignment="Top" Click="buttonLaden_Click" />
+                    <Button Content="Speichern" Height="24" HorizontalAlignment="Left" Margin="391,239,0,0" Name="buttonSave" VerticalAlignment="Top" Width="101" Click="buttonSave_Click" />
+                    <Button Content="Laden" Height="24" Margin="276,239,113,0" Name="buttonLaden" VerticalAlignment="Top" Click="buttonLaden_Click" />
                 </Grid>                
             </TabItem>
             <TabItem Header="Suche" Name="tabItem2">
@@ -70,16 +70,16 @@
                     <ListView Height="163" HorizontalAlignment="Left" Margin="6,100,0,0" Name="listView1" VerticalAlignment="Top" Width="486">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Guid" Width="40" />
-                                <GridViewColumn Header="Komponente" Width="110" />
-                                <GridViewColumn Header="Gebaude" Width="110" />
-                                <GridViewColumn Header="Raum" Width="110" />
-                                <GridViewColumn Header="Date" Width="110" />
+                                <GridViewColumn Header="Guid" Width="40" DisplayMemberBinding="{Binding Path=guid}"/>
+                                <GridViewColumn Header="Komponente" Width="110" DisplayMemberBinding="{Binding Path=Komponente}"/>
+                                <GridViewColumn Header="Gebaude" Width="110" DisplayMemberBinding="{Binding Path=Gebaude}"/>
+                                <GridViewColumn Header="Raum" Width="110" DisplayMemberBinding="{Binding Path=Raum}"/>
+                                <GridViewColumn Header="Date" Width="110" DisplayMemberBinding="{Binding Path=Date}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
                     <Button Content="Suchen" Height="24" HorizontalAlignment="Left" Margin="239,18,0,0" Name="searchBtn" VerticalAlignment="Top" Width="240" Click="searchBtn_Click" />
-                    <TextBlock Height="39" HorizontalAlignment="Left" Margin="239,49,0,0" Name="sucheText" Text="TextBlock" VerticalAlignment="Top" Width="240" />
+                    <TextBlock Height="39" HorizontalAlignment="Left" Margin="239,49,0,0" Name="sucheText" Text="" VerticalAlignment="Top" Width="240" />
                 </Grid>
             </TabItem>
         </TabControl>

@@ -15,6 +15,7 @@ using JA.netzwerkPlanBib;
 using System.IO;
 using System.Xml.Serialization;
 using Microsoft.Win32;
+using System.Globalization;
 
 namespace JA.GUIWPF
 {
@@ -25,44 +26,47 @@ namespace JA.GUIWPF
     {
         private netzwerkKomponenteList l = new netzwerkKomponenteList();
         private netzwerkKomponenteList l2 = new netzwerkKomponenteList();
+        private CultureInfo ci = new CultureInfo("de-DE");
         private string ext = " ";
         public MainWindow()
         {
             InitializeComponent();
-            listViewHandy.ItemsSource = this.l;
+            listViewKomponente.ItemsSource = this.l;
             listView1.ItemsSource = this.l2;
+            
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            /*if (textBoxHersteller.Text != "" || textBoxSNr.Text != "" || textBoxPreis.Text != "" || textBoxModell.Text != "")
-            {*/
+            if (textBoxKomponente.Text != "" && datePicker1.Text != "" && comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
+            {
                 netzwerkKomponente newItem = new netzwerkKomponente();
                 newItem.Komponente = textBoxKomponente.Text;
                 newItem.Gebaude = comboBox1.Text;
                 newItem.Raum = comboBox2.Text;
-                newItem.Date = datePicker1.Text;
+                DateTime utcdt = Convert.ToDateTime(datePicker1.Text);
+                newItem.Date = utcdt.ToString("d", ci);
                 this.l.Add(newItem);
-                textBlockOutput.Text = "Handy Hinzugefügt";
-                listViewHandy.Items.Refresh();
-            /*}
+                textBlockOutput.Text = "Erfolgreich eingetragen";
+                listViewKomponente.Items.Refresh();
+            }
             else
             {
                 textBlockOutput.Text = "Inkorrekte eingaben";
-            }  */
+            }  
         }
 
         private void buttonSave_Click(object sender, RoutedEventArgs e)
         {            
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "XML Datei (*.xml)|*.xml|DAT Datei (*.dat)|*.dat";
+            saveFileDialog.Filter = "XML Datei (*.xml)|*.xml|JSON Datei (*.json)|*.json";
             if(saveFileDialog.ShowDialog() == true){
                 string pname = saveFileDialog.FileName;                
                 FileInfo fi = new FileInfo(pname);
                 ext = fi.Extension;
-                if (ext == ".dat")
+                if (ext == ".json")
                 {
-                    serialisierungsserver s1 = new binary();
+                    serialisierungsserver s1 = new json();
                     l.ser(s1, pname, l);
                 }
                 if (ext == ".xml")
@@ -76,28 +80,28 @@ namespace JA.GUIWPF
         private void buttonLaden_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "XML Datei (*.xml)|*.xml|DAT Datei (*.dat)|*.dat";
+            openFileDialog.Filter = "XML Datei (*.xml)|*.xml|JSON Datei (*.json)|*.json";
             
             if (openFileDialog.ShowDialog() == true)
             {
                 string pname = openFileDialog.FileName;
                 FileInfo fi = new FileInfo(pname);
                 ext = fi.Extension;
-                if (ext == ".dat")
+                if (ext == ".json")
                 {
-                    serialisierungsserver s2 = new binary();
+                    serialisierungsserver s2 = new json();
                     l.deser(s2, pname);
 
-                    listViewHandy.ItemsSource = this.l;
-                    listViewHandy.Items.Refresh();
+                    listViewKomponente.ItemsSource = this.l;
+                    listViewKomponente.Items.Refresh();
                 }
                 if (ext == ".xml")
                 {
                     serialisierungsserver s2 = new xml();
                     l.deser(s2, pname);
 
-                    listViewHandy.ItemsSource = this.l;
-                    listViewHandy.Items.Refresh();
+                    listViewKomponente.ItemsSource = this.l;
+                    listViewKomponente.Items.Refresh();
                 }                
                 textBlockOutput.Text = "Geladen.";
             }            
@@ -186,13 +190,23 @@ namespace JA.GUIWPF
 
         private void searchBtn_Click(object sender, RoutedEventArgs e)
         {
+            if (comboBox4.SelectedItem != null && comboBox3.SelectedItem != null)
+            {
+                listeKomponentenInRaum();
+            }
+            else
+            {
+                sucheText.Text = "Bitte korrekte Suchkriterien wählen.";
+            }
+            
+        }
+
+        private void listeKomponentenInRaum()
+        {
             int foundCount = 0;
             this.l2.Clear();
             foreach (netzwerkKomponente prime in l)
             {
-                textBlockOutput.Text = comboBox3.SelectedItem.ToString().Remove(0, 38);
-                
-
                 if (prime.Raum == comboBox4.SelectedItem.ToString() && prime.Gebaude == comboBox3.SelectedItem.ToString().Remove(0, 38))
                 {
                     this.l2.Add(prime);
@@ -210,8 +224,6 @@ namespace JA.GUIWPF
                 listView1.Items.Refresh();
                 sucheText.Text = "Keine Ergebnisse gefunden.";
             }
-            
         }
-
     }
 }

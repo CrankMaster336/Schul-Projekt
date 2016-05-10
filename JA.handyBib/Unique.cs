@@ -5,8 +5,6 @@ using System.Text;
 
 namespace JA.netzwerkPlanBib
 {
-    [Serializable()]
-
     public abstract class Unique
     {
         public Guid guid { get; set; }

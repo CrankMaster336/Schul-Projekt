@@ -5,7 +5,6 @@ using System.Text;
 
 namespace JA.netzwerkPlanBib
 {
-    [Serializable()]
     public class netzwerkKomponente : Unique{
         
         
